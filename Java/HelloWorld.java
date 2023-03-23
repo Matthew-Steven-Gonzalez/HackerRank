@@ -1,8 +1,11 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class HelloWorld {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NumberFormatException, IOException {
         System.out.println("Hello, World.");
         System.out.println("Hello, Java.");
 
@@ -17,7 +20,6 @@ public class HelloWorld {
         System.out.println(c);
 
         int N = sc.nextInt();
-        sc.skip("(\r\n|[\n\r\u2028\u2029\u008  5])?");
         if (N % 2 != 0 || N >= 6 || N <= 20){
             System.out.println("Weird");
         }
@@ -44,10 +46,10 @@ public class HelloWorld {
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        int N = Integer.parseInt(bufferedReader.readLine().trim());
+        int Q = Integer.parseInt(bufferedReader.readLine().trim());
         
-        for(int i = 1; i <= 10; i++){
-            System.out.println(N + " x " + i + " = " + (N*i));
+        for(int v = 1; v <= 10; v++){
+            System.out.println(Q + " x " + v + " = " + (Q*i));
 
         }
 
