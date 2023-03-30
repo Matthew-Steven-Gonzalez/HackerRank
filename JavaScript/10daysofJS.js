@@ -25,6 +25,32 @@ function main() {
     performOperation(secondInteger, secondDecimal, secondString);
 }
 
+// Day 1: Arithmetic Operators
+
+function getArea(length, width) {
+    let area = length * width;
+    
+    return area;
+}
+
+function getPerimeter(length, width) {
+    let perimeter = 2 * (length + width);
+    
+    return perimeter;
+}
+
+// Day 1: Let and Const
+
+function main() {
+    
+    const PI = Math.PI;
+    
+    var r = readLine();
+    
+    console.log(PI * (r *r));
+    
+    console.log(2 * PI * r);
+}
 
 
 
