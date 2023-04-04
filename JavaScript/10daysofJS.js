@@ -236,3 +236,27 @@ class Square extends Rectangle{
     super(w, w);
   }
 }
+
+
+// Day 5: Arrow Functions
+// proper answer =>
+// function modifyArray(nums){
+//     return nums.map(num => num % 2 === 0 ? num*2 : num*3)
+//  }
+
+function modifyArray(nums) {
+    let moddedArr = [];
+    
+    for(let i = 0; i < nums.length;i++){
+        if(nums[i] % 2 == 0){
+            let evenNum = nums[i] *2
+            moddedArr.push(evenNum);
+        }
+        else{
+            let oddNum = nums[i] * 3;
+            moddedArr.push(oddNum);
+        }
+    }
+    
+    return moddedArr;
+}
