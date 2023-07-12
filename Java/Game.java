@@ -2,25 +2,25 @@ import java.util.ArrayList;
 
 public class Game {
 
-    private int dice1;
+    static private int dice1;
 
-    private int dice2;
+    static private int dice2;
 
-    private int dice3;
+    static private int dice3;
 
-    private int dice4;
+    static private int dice4;
 
-    private int dice5;
+    static private int dice5;
 
     Game(){}
 
     private static void roll(){
 
-        int dice1=(int)(Math.random()*6+1);
-        int dice2=(int)(Math.random()*6+1);
-        int dice3=(int)(Math.random()*6+1);
-        int dice4=(int)(Math.random()*6+1);
-        int dice5=(int)(Math.random()*6+1);
+        dice1=(int)(Math.random()*6+1);
+        dice2=(int)(Math.random()*6+1);
+        dice3=(int)(Math.random()*6+1);
+        dice4=(int)(Math.random()*6+1);
+        dice5=(int)(Math.random()*6+1);
 
         ArrayList<Integer> diceArray = new ArrayList<>();
 
