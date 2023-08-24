@@ -7,6 +7,7 @@ public class Strings {
         Scanner sc = new Scanner(System.in);
         String A = sc.next();
         String B = sc.next();
+        sc.close();
         String lexi;
         /* Enter your code here. Print output to STDOUT. */
         int sums = A.length() + B.length();
