@@ -12,15 +12,17 @@ public class Game {
 
     static private int dice5;
 
-    Game(){}
+    Game() {
+    }
 
-    private static void roll(){
+    private static void roll() {
 
-        dice1=(int)(Math.random()*6+1);
-        dice2=(int)(Math.random()*6+1);
-        dice3=(int)(Math.random()*6+1);
-        dice4=(int)(Math.random()*6+1);
-        dice5=(int)(Math.random()*6+1);
+        // dice construct of six sided dice.
+        dice1 = (int) (Math.random() * 6 + 1);
+        dice2 = (int) (Math.random() * 6 + 1);
+        dice3 = (int) (Math.random() * 6 + 1);
+        dice4 = (int) (Math.random() * 6 + 1);
+        dice5 = (int) (Math.random() * 6 + 1);
 
         ArrayList<Integer> diceArray = new ArrayList<>();
 
@@ -38,6 +40,4 @@ public class Game {
         roll();
     }
 
-
-    
 }
