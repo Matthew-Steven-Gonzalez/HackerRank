@@ -1,5 +1,3 @@
-import java.util.function.Function;
-
 public class FizzBuzz {
 
     public static void fizzBuzz() {
